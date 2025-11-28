@@ -1,4 +1,4 @@
-# @ras-sh/template-tanstack-start-convex
+# template-tanstack-start-convex
 
 🚀⚡ Full-stack template with TanStack Start and Convex. Includes SSR, real-time sync, and optimistic updates.
 

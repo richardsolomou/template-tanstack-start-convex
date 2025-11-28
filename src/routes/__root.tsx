@@ -24,9 +24,9 @@ export const Route = createRootRouteWithContext<{
         content: "width=device-width, initial-scale=1",
       },
       ...seo({
-        title: "ras.sh",
+        title: "template-tanstack-start-convex",
         description:
-          "A collection of side projects, experiments, and tools built with modern technologies",
+          "🚀⚡ Full-stack template with TanStack Start and Convex. Includes SSR, real-time sync, and optimistic updates.",
       }),
     ],
     links: [

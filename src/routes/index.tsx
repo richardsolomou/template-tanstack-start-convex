@@ -121,7 +121,7 @@ function Home() {
             <Badge variant="outline">v{packageJson.version}</Badge>
           </div>
           <h1 className="mb-8 font-bold text-4xl tracking-tight">
-            ⚡ ras.sh TanStack Start + Convex Template
+            ⚡ TanStack Start + Convex Template
           </h1>
 
           <div className="space-y-4">
@@ -196,11 +196,11 @@ function Home() {
             </a>
             <a
               className="block underline transition-colors hover:text-zinc-100"
-              href="https://ras.sh"
+              href="https://solomou.dev"
               rel="noopener"
               target="_blank"
             >
-              More templates by ras.sh →
+              More templates →
             </a>
           </div>
         </section>
