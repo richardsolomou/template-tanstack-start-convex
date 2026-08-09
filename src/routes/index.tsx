@@ -13,13 +13,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import type { Doc } from "../../convex/_generated/dataModel";
 import packageJson from "../../package.json" with { type: "json" };
-import {
-  todosQuery,
-  useAddTodo,
-  useRemoveTodo,
-  useTodos,
-  useToggleTodo,
-} from "../hooks/use-todos";
+import { todosQuery, useAddTodo, useRemoveTodo, useTodos, useToggleTodo } from "../hooks/use-todos";
 
 export const Route = createFileRoute("/")({
   loader: async (opts) => {
@@ -61,10 +55,7 @@ function TodoItem({ todo }: { todo: Doc<"todos"> }) {
 
   return (
     <div className="group flex items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900/50 p-4 transition-colors hover:border-zinc-700 hover:bg-zinc-900/70">
-      <Checkbox
-        checked={todo.isCompleted}
-        onCheckedChange={() => toggleTodo({ id: todo._id })}
-      />
+      <Checkbox checked={todo.isCompleted} onCheckedChange={() => toggleTodo({ id: todo._id })} />
       <span
         className={`flex-1 text-sm transition-colors ${
           todo.isCompleted ? "text-zinc-500 line-through" : "text-zinc-200"
@@ -88,9 +79,7 @@ function EmptyState() {
   return (
     <div className="flex flex-col items-center justify-center gap-2 rounded-lg border border-zinc-800 border-dashed bg-zinc-900/30 py-12">
       <p className="font-medium text-sm text-zinc-400">No todos yet</p>
-      <p className="text-xs text-zinc-500">
-        Add your first todo to get started
-      </p>
+      <p className="text-xs text-zinc-500">Add your first todo to get started</p>
     </div>
   );
 }
@@ -127,22 +116,14 @@ function Home() {
           <div className="space-y-4">
             <p className="text-lg text-zinc-300 leading-relaxed">
               A full-stack template with{" "}
-              <span className="font-semibold text-zinc-100">
-                server-side rendering
-              </span>
-              ,{" "}
-              <span className="font-semibold text-zinc-100">
-                real-time database sync
-              </span>
-              , and{" "}
-              <span className="font-semibold text-zinc-100">
-                optimistic updates
-              </span>{" "}
-              out of the box.
+              <span className="font-semibold text-zinc-100">server-side rendering</span>,{" "}
+              <span className="font-semibold text-zinc-100">real-time database sync</span>, and{" "}
+              <span className="font-semibold text-zinc-100">optimistic updates</span> out of the
+              box.
             </p>
             <p className="text-sm text-zinc-400">
-              Try the todo list below — open this page in multiple tabs to see
-              real-time synchronization in action.
+              Try the todo list below — open this page in multiple tabs to see real-time
+              synchronization in action.
             </p>
           </div>
         </section>

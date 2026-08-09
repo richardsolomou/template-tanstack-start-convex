@@ -34,9 +34,7 @@ export function getRouter() {
     defaultErrorComponent: DefaultCatchBoundary,
     defaultNotFoundComponent: () => <NotFound />,
     Wrap: ({ children }) => (
-      <ConvexProvider client={convexQueryClient.convexClient}>
-        {children}
-      </ConvexProvider>
+      <ConvexProvider client={convexQueryClient.convexClient}>{children}</ConvexProvider>
     ),
   });
 
