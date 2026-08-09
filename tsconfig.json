@@ -1,7 +1,6 @@
 {
-  "extends": "@ras-sh/typescript-config/tanstack-start.json",
+  "extends": "ras-stack/config/typescript/tanstack",
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"],
       "~/convex/*": ["./convex/*"]

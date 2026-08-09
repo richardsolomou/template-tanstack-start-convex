@@ -1,7 +1,6 @@
 {
   "name": "template-tanstack-start-convex",
   "version": "0.0.3",
-  "type": "module",
   "private": true,
   "description": "Template for TanStack Start projects.",
   "keywords": [],
@@ -10,16 +9,17 @@
     "url": "https://github.com/richardsolomou/template-tanstack-start-convex/issues",
     "email": "richard@solomou.dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/richardsolomou/template-tanstack-start-convex"
-  },
   "license": "MIT",
   "author": {
     "name": "Richard Solomou",
     "email": "richard@solomou.dev",
     "url": "https://solomou.dev"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richardsolomou/template-tanstack-start-convex"
+  },
+  "type": "module",
   "scripts": {
     "dev": "concurrently \"pnpm dev:web\" \"pnpm dev:convex\"",
     "dev:web": "vite dev",
@@ -27,37 +27,42 @@
     "build": "vite build",
     "preview": "vite preview",
     "check-types": "tsc --noEmit",
-    "check": "ultracite check",
-    "fix": "ultracite fix --unsafe"
+    "check": "oxfmt --check . && oxlint --type-aware --deny-warnings .",
+    "fix": "oxfmt --write . && oxlint --type-aware --fix .",
+    "policy:check": "ras-stack-policy check"
   },
   "dependencies": {
     "@convex-dev/react-query": "0.1.0",
-    "@fontsource-variable/geist": "^5.2.8",
-    "@fontsource-variable/geist-mono": "^5.2.7",
+    "@fontsource-variable/geist": "^5.3.0",
+    "@fontsource-variable/geist-mono": "^5.3.0",
     "@ras-sh/ui": "^0.0.6",
-    "@tanstack/react-query": "^5.90.21",
-    "@tanstack/react-router": "^1.159.5",
-    "@tanstack/react-router-ssr-query": "^1.159.5",
-    "@tanstack/react-start": "^1.159.5",
-    "convex": "^1.31.7",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "@tanstack/react-query": "^5.101.4",
+    "@tanstack/react-router": "^1.170.23",
+    "@tanstack/react-router-ssr-query": "^1.167.1",
+    "@tanstack/react-start": "^1.168.40",
+    "convex": "^1.43.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.15",
-    "@ras-sh/typescript-config": "^0.0.3",
-    "@tailwindcss/vite": "^4.1.18",
-    "@types/node": "^25.2.3",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react-swc": "^4.2.3",
-    "concurrently": "^9.2.1",
-    "lefthook": "^2.1.1",
-    "nitro": "3.0.1-alpha.2",
-    "tailwindcss": "^4.1.18",
-    "typescript": "^5.9.3",
-    "ultracite": "7.1.5",
-    "vite": "^7.3.1",
-    "vite-tsconfig-paths": "^6.1.1"
-  }
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react-swc": "^4.3.3",
+    "concurrently": "^10.0.4",
+    "lefthook": "^2.1.10",
+    "nitro": "3.0.260610-beta",
+    "oxfmt": "^0.62.0",
+    "oxlint": "^1.77.0",
+    "oxlint-tsgolint": "^7.0.2001",
+    "ras-stack": "^0.8.2",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.1"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "packageManager": "pnpm@11.15.0"
 }

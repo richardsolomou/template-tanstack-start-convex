@@ -1,0 +1,6 @@
+allowBuilds:
+  "@swc/core": true
+  esbuild: true
+  lefthook: true
+minimumReleaseAgeExclude:
+  - ras-stack@0.8.2

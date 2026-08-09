@@ -30,16 +30,16 @@ pnpm dev               # Start dev servers
 
 ## Scripts
 
-| Command | Description |
-|---------|-------------|
-| `pnpm dev` | Start both web and Convex dev servers |
-| `pnpm dev:web` | Start only web dev server (port 5173) |
-| `pnpm dev:convex` | Start only Convex dev server |
-| `pnpm build` | Build for production |
-| `pnpm preview` | Preview production build |
-| `pnpm check-types` | Run TypeScript type checking |
-| `pnpm check` | Run linter checks |
-| `pnpm fix` | Auto-fix linting issues |
+| Command            | Description                           |
+| ------------------ | ------------------------------------- |
+| `pnpm dev`         | Start both web and Convex dev servers |
+| `pnpm dev:web`     | Start only web dev server (port 5173) |
+| `pnpm dev:convex`  | Start only Convex dev server          |
+| `pnpm build`       | Build for production                  |
+| `pnpm preview`     | Preview production build              |
+| `pnpm check-types` | Run TypeScript type checking          |
+| `pnpm check`       | Run linter checks                     |
+| `pnpm fix`         | Auto-fix linting issues               |
 
 ## Project Structure
 
