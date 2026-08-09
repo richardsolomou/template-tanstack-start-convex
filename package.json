@@ -27,7 +27,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "check-types": "tsc --noEmit",
-    "check": "oxlint --type-aware --deny-warnings .",
+    "check": "oxfmt --check . && oxlint --type-aware --deny-warnings .",
     "fix": "oxfmt --write . && oxlint --type-aware --fix .",
     "policy:check": "ras-stack-policy check"
   },
