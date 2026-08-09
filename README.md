@@ -8,7 +8,7 @@
 - **SSR** - Server-side rendering with route loaders
 - **Optimistic Updates** - Instant UI feedback
 - **TypeScript** - End-to-end type safety
-- **Tailwind CSS v4** + **@ras-sh/ui** - Modern styling and components
+- **Tailwind CSS v4** + **shadcn/ui with Base UI** - Modern styling and local components
 
 Includes a working todo list demo showing Convex integration, custom hooks, and SSR patterns.
 
