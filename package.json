@@ -29,7 +29,7 @@
     "check-types": "tsc --noEmit",
     "check": "oxfmt --check . && oxlint --type-aware --deny-warnings .",
     "fix": "oxfmt --write . && oxlint --type-aware --fix .",
-    "policy:check": "ras-stack-policy check"
+    "policy:check": "ras policy check"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
@@ -62,7 +62,7 @@
     "oxfmt": "^0.62.0",
     "oxlint": "^1.77.0",
     "oxlint-tsgolint": "^7.0.2001",
-    "ras-stack": "^0.8.2",
+    "ras-stack": "^0.39.1",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2",
     "vite": "^8.2.1"
