@@ -5,5 +5,5 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - baseline-browser-mapping@2.11.13
   - browserslist@4.28.8
-  - ras-stack@0.39.5
+  - ras-stack@0.41.1
 minimumReleaseAge: 10080
