@@ -3,7 +3,7 @@ allowBuilds:
   esbuild: true
   lefthook: true
 minimumReleaseAgeExclude:
+  - ras-stack-config@1.0.0
   - baseline-browser-mapping@2.11.13
   - browserslist@4.28.8
-  - ras-stack@0.41.1
 minimumReleaseAge: 10080

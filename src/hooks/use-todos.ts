@@ -16,6 +16,7 @@ export function useAddTodo() {
       if (currentTodos !== undefined) {
         const optimisticTodo = {
           _id: crypto.randomUUID() as Id<"todos">,
+          // oxlint-disable-next-line react/purity -- Convex runs optimistic updates during mutation dispatch, not render.
           _creationTime: Date.now(),
           text: args.text,
           isCompleted: false,
